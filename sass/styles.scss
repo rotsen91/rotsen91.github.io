@@ -3,11 +3,11 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,300italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Nunito:400,300,700);
 // Imports
-//@import "compass";
-@import "partials/typography";
-@import "partials/buttons";
-@import "partials/colors";
-@import "partials/layout";
+/* @import "compass"; */
+@import "partials/_typography";
+@import "partials/_buttons";
+@import "partials/_colors";
+@import "partials/_layout";
 
 /* ==========================================================================
 Global Styles
@@ -17,7 +17,7 @@ Global Styles
   display: table;
   clear: both;
 }
-.no-padding {
+.no-padding {  
   padding: 0;
 }
 .no-margin {
@@ -132,7 +132,7 @@ Animations
 }
 @keyframes floating-arrow {
   from {
-    transform: translate(-50%, 0)
+    transform: translate(-50%, 0) 
   }
   65% {
     transform: translate(-50%, 15px)
@@ -898,4 +898,33 @@ body.modal-open {
 }
 .modal-body {
   padding:25px;
+}
+
+.w-75 {
+  width: 75%!important;
+}
+
+.w-50 {
+  width: 50%!important;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+
+.card-title {
+  margin-bottom: .75rem;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
 }

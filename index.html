@@ -20,7 +20,7 @@
     <meta name="theme-color" content="#ffffff">
     <meta property="og:title" content="Cristina & Nestor are getting Married">
     <meta property="og:description" content="We would like to invite you to our big day.">
-    <!-- <meta property="og:image" content="https://wedding.ramswaroop.me/img/hero-min.jpg"> -->
+    <meta property="og:image" content="https://cristinaandnestor.com/img/ring.jpg">
     <meta property="og:type" content="website">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
@@ -80,7 +80,7 @@
             <div class="row">
                 <div class="col-sm-4 hidden-xs"></div>
                 <div class="col-sm-4 hidden-xs text-center">
-                    <!-- <a href="#rsvp" class="btn btn-accent btn-large rsvp-btn">RSVP</a> -->
+                    <a href="#rsvp" class="btn btn-accent btn-large rsvp-btn" style="margin-top: 65%;background: rgb(232, 202, 111, 0.5); color:white;">RSVP</a>
                 </div>
                 <div class="col-sm-4 hidden-xs"></div>
             </div>
@@ -88,11 +88,32 @@
         <div class="down-arrow floating-arrow"><a href="#invitation"><i class="fa fa-angle-down"></i></a></div>
     </section>
 
+    <style type="text/css"> 
+        #mobile { 
+          visibility: hidden; 
+          display: none; 
+        } 
+        @media (max-width: 550px) 
+        { 
+          #desktop 
+          { 
+            visibility: hidden; 
+            display: none; 
+            height: 0px; width: 0px; 
+          } 
+          #mobile 
+          { 
+            visibility: visible; 
+            display: block; 
+          } 
+        } </style>
+
     <section id="invitation" class="section-padding events">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <img src="img/invitation.png" alt="" />
+                    <img id="desktop" src="img/invitation.png" alt="" />
+                    <img id="mobile" src="img/invitation_small.PNG" alt="" />
                 </div>
             </div>
         </div>
@@ -106,31 +127,30 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 hidden-sm hidden-xs"><img src="img/photo1.jpg" class="wp1"></div>
+                <div class="col-md-3 hidden-sm hidden-xs" style="margin-top: 10%;"><img src="img/photo1.jpg" class="wp1"></div>
                 <div class="col-md-6">
                     <p>
-                        We first met at in our undergrad when we took a class together and Nestor asked me to work with him
-                        in a group project. That was the first time we talked, although years latter Nestor told me he put
-                        his eyes on me the firts time he saw in a class he was taking. Maybe it was because I was a redhead
-                        at that time. :) While working together in the project we became good friends and and remained close
-                        friends throughout the years. Before finishing my undergrad Nestor has declared his feelings for 
-                        me but I turned him down because we didn't had "quemistry". Boy was I wrong...
+                        We first while working on our undergraduate degree when we took a class together and Nestor asked Cristina if it was ok to partner up for a class project. That was the first time we talked, 
+                        although years later Nestor confessed that
+                        he had his eyes on me way before that. While working together, we became good friends and remained close
+                        friends throughout the years. However, on Cristina's last semester, before finishing her undergrad, Nestor expressed the feelings he had towards her, but
+                        Crstina turned him down because she said there was no "chemistry". Boy was she wrong...
                     </p>
                     <p>
-                        I latter graduated and moved to Boston while Nestor stayed in school. After he graduated he started
-                        working at my company in the same department and on the same work projects. Ohh, and he also moved to
-                        my same apartment complex. Life was giving me a sign that maybe I should give him a chance but I refused 
-                        to listen, after all he was my best friend.
+                        Cristina ended her last semester, and quickly moved to Boston while Nestor stayed in school. But beacuse what's meant to be will always find a way, once Nestor finished his degree, he also moved down to Boston and
+                        even started working at the same company, same department, same work projects as Cristina. He also ended up at the same
+                        same apartment complex as Cristina. Life was giving her sign after sign, that maybe she should give him a chance. But she kept refusing 
+                        to listen, after all she considered him a best friend.
                     </p>
                     <p>
-                        We fought a lot, we laughed a lot, but most of all we enjoyed each other's company and the way we can always
-                        make each other smile. I slowly began to fall for him without realizing it. Theres a lot more to the story 
-                        but I don't want to keep boring you with all the details. Let's just say our story had it's roller coasters. 
-                        Our love was not "love at first sight", at least for me. It took years to grow and a lot of perseverance and 
-                        patience from Nestor.  
+                        As time went on, we fought a lot, we laughed a lot, but most of all we enjoyed each other's company and the way we could always
+                        make each other smile. And little by little, Cristina began to fall for him without even realizing it. There's a lot more to the story 
+                        but we don't want to bore you with all the details. 
+                        Let's just say our story had it's roller coasters however we always remember that the most important thing is to enjoy the ride.
+                         
                     </p>
                 </div>
-                <div class="col-md-3 hidden-sm hidden-xs"><img src="img/photo2.jpg" class="wp2"></div>
+                <div class="col-md-3 hidden-sm hidden-xs" style="margin-top: 10%;"><img src="img/photo2.jpg" class="wp2"></div>
             </div>
             <div class="row">
                 <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/photo1.jpg"
@@ -150,13 +170,48 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12"> <!--col-md-6 col-sm-12 col-xs-12 leftcol-->
-                    <div class="wp3">
-                        <!-- <p><strong>Wedding Timeline</strong></p> -->
-                        <div class="row  wp7">
-                            <div class="col-md-4 col-md-offset-4">
+                <div class="col-md-12">
+                    <div class="wp3 text-center">
+                        <div class="row wp7" style="display: flow-root; text-align: -webkit-center;">
+                            <!-- <div class="col-md-4 col-md-offset-4">
                                 <img src="img/Capture.PNG" class="wp2">
-                            </div>
+                            </div> -->
+
+                            <div class="card text-center w-75" style="margin-bottom: 1rem; ">
+                                <div class="card-body">
+                                  <h4 class="card-title" style="color: #a94442;">Wedding Ceremony</h4>
+                                  <p class="card-text">11 - 11:30 AM</p>
+                                  <img src="img/chapel.png" class="wp2" style="margin-top: -1.5rem;">  
+                                </div>
+                              </div>
+
+                              <div class="card text-center w-75" style="margin-bottom: 1rem;">
+                                <div class="card-body">
+                                  <h5 class="card-title" style="color: #a94442;">Cocktail Hour</h5>
+                                  <p class="card-text">11:45 AM - 12:30 PM</p>
+                                  <img src="img/champagne_icon1.png" class="wp2" style="margin-top: -2.5rem;">  
+                                </div>
+                              </div>
+
+                              <div class="card text-center w-75">
+                                <div class="card-body">
+                                  <h5 class="card-title" style="color: #a94442;">Reception</h5>
+                                  <p class="card-text">12:30 - 3:00 PM</p>
+                                  <div class="container w-75">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <img src="img/food3.png" class="wp2" style="padding-left: 0px;">
+                                        </div> 
+                                        <div class="col-sm-4">
+                                            <img src="img/dance.png" class="wp2">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <img src="img/cake1.png" class="wp2">
+                                        </div>
+                                      </div>
+                                  </div>                                  
+                                </div>
+                              </div>
                         </div>
 
                         <!-- <h5>Ceremony <span class="time">11 - 11:30AM</span></h5>
